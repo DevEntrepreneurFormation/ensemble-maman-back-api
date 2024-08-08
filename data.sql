@@ -14,3 +14,5 @@ VALUES
 ('Samuel', 'samuel@gmail.com'),
 ('Lea', 'leamoui.sp@gmail.com'),
 ('Anne', 'annita.foi@gmail.com');
+
+
