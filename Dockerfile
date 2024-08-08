@@ -8,8 +8,8 @@ ENV DB_DATABASE=ensemble_maman
 ENV DB_USER=root
 ENV DB_PASSWORD=narutouzumaki
 
-COPY target/*.jar app.jars
-EXPOSE 8000
+COPY target/*.jar app.jar
+EXPOSE 9000
 
 
 ENTRYPOINT ["java","-jar","/app.jar"]
