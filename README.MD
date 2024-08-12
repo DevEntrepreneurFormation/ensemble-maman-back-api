@@ -11,3 +11,7 @@ Créer une base de donnes ensemble_maman: "create database ensemble_maman;"
 Utiliser la base de donnes ensemble_maman : "use ensemble_maman;"
 Lancer le dump avec la commande "SOURCE data.sql;"
 
+
+**URL DU SWAGGER **
+http://localhost:9000/swagger-ui/index.html#/
+

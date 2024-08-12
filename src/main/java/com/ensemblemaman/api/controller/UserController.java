@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ensemblemaman.api.model.User;
+import com.ensemblemaman.api.entity.User;
 import com.ensemblemaman.api.repository.UserRepository;
 import com.ensemblemaman.api.service.UserService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("users")
 public class UserController {
 	@Autowired
 	UserRepository userRepository;
@@ -21,7 +21,7 @@ public class UserController {
     UserService userService;
     
 
-    @GetMapping("/users")
+    @GetMapping("all")
 	public List<User> getAllEmployees() {
 		List<User> users= userService.getAllUsers();
 		return users;
