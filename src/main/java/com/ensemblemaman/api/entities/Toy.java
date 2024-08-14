@@ -1,12 +1,14 @@
-package com.ensemblemaman.api.entity;
+package com.ensemblemaman.api.entities;
 
 import com.ensemblemaman.api.model.AgeEnum;
-import com.ensemblemaman.api.model.StateEnum;
-import com.ensemblemaman.api.validations.ValueOfEnum;
 import com.ensemblemaman.api.model.GenderEnum;
+import com.ensemblemaman.api.model.StateEnum;
+import com.ensemblemaman.api.validations.ValidationGroups.OnCreateToy;
+import com.ensemblemaman.api.validations.ValueOfEnum;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,11 +27,13 @@ public class Toy  extends Donation{
     @NotNull(message="Ce champ est obligatoire")
     public String state;
 
-    @ValueOfEnum(enumClass=AgeEnum.class)
-    @NotNull(message="Ce champ est obligatoire")
-    public String age;
-
     @NotNull(message="Ce champ est obligatoire")
     @ValueOfEnum(enumClass= GenderEnum.class)
     public String gender;
+
+
+    @ValueOfEnum(enumClass=AgeEnum.class)
+    @NotNull(message="Ce champ est obligatoire")
+    @NotBlank(message="Ce champ ne doit pas être vide")
+    public String age;
 }

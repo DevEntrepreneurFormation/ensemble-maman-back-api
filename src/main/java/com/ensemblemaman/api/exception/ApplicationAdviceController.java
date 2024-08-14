@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.ensemblemaman.api.dto.ErrorEntity;
+import com.ensemblemaman.api.model.ErrorEntity;
 
 import jakarta.persistence.EntityNotFoundException;
 

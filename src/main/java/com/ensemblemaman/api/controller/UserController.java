@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ensemblemaman.api.entity.User;
+import com.ensemblemaman.api.entities.User;
 import com.ensemblemaman.api.repository.UserRepository;
 import com.ensemblemaman.api.service.UserService;
 

@@ -1,3 +1,3 @@
-package com.ensemblemaman.api.dto;
+package com.ensemblemaman.api.model;
 
 public record ErrorEntity( Object message, String code) {}
